@@ -8,6 +8,7 @@ import NotFound from "./pages/NotFound";
 import { Dashboard } from "./pages/Dashboard";
 import { NewLeaseRequest } from "./pages/NewLeaseRequest";
 import { LeaseRequestDetails } from "./pages/LeaseRequestDetails";
+import { ChatBot } from "./components/chatbot/ChatBot";
 
 const queryClient = new QueryClient();
 
@@ -23,6 +24,7 @@ const App = () => (
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
+      <ChatBot />
     </TooltipProvider>
   </QueryClientProvider>
 );
